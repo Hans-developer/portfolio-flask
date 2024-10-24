@@ -1,0 +1,30 @@
+<section class="bg-lighht p-4" id="contacto">
+    <div class="container">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-6 text-center-lg-start">
+                <h2 class="display-4 fw-bol lh-1 mb-3">¡Hablemos!</h2>
+                <p class="col-lg-10 fs-4">Si estas interesado en trabajar conmigo o tienes alguna pregunta, no dudes en comunicarte conmigo atraves del formulario o por correo electronico. Estare encantado de escuchar lo que tienes que decir. ¡Gracias por visitar mi sitio web!</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-6">
+                <form class="p-4 p-md-5 border rounded-3 bg-white" method="post" action="{{url_for('send_mail')}}">
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Nombre completo</label>
+                        <input type="text" class="form-control" name="name" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Correo electronico</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="mesage">Mensaje</label>
+                        <input type="text" class="form-control" name="mesage" rows="5" id="mesage" required>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" style="width:100%">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>

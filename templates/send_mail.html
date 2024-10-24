@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{%block title%}Email enviado{%endblock%}
+
+{%block content%}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card border-success">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">¡correo enviado!</h2>
+                    <p class="card-text text-center">Tu mensaje fue enviado.</p>
+                    <a href="{{url_for('index')}}" class="bnt btn-success d-block mx-auto mt-4"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                      </svg>Volver a Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
